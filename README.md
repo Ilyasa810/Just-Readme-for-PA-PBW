@@ -184,7 +184,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🏠 Landing Page**
 <div align="center">
-  <img src="screenshots/landing-page.png" alt="Landing Page" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/c46b3a2b-8b46-443b-85ea-55a359a52428" alt="Landing Page" width="85%"/>
   <br/><sub><i>Halaman utama dengan hero section, statistik, dan navigasi</i></sub>
 </div>
 
@@ -192,7 +192,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🎢 Halaman Wahana / Atraksi**
 <div align="center">
-  <img src="screenshots/halaman-wahana.png" alt="Halaman Wahana" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/565d69c2-54eb-4b2a-9900-2ef2d9403b70" alt="Halaman Wahana" width="85%"/>
   <br/><sub><i>Daftar wahana dengan kategori, harga, dan tombol detail</i></sub>
 </div>
 
@@ -200,7 +200,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🎯 Detail Wahana**
 <div align="center">
-  <img src="screenshots/detail-wahana.png" alt="Detail Wahana" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/6a3899ee-c346-44c4-860f-d124918a2a95" alt="Detail Wahana" width="85%"/>
   <br/><sub><i>Info lengkap wahana, ulasan pengunjung, dan form tulis ulasan</i></sub>
 </div>
 
@@ -208,7 +208,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🖼️ Galeri Foto**
 <div align="center">
-  <img src="screenshots/galeri.png" alt="Galeri Foto" width="85%"/>
+  <img src= "https://github.com/user-attachments/assets/154da513-5484-4c66-9ca1-3f55be7d57df" alt="Galeri Foto" width="85%"/>
   <br/><sub><i>Kumpulan foto resmi dan kiriman pengunjung yang telah disetujui</i></sub>
 </div>
 
@@ -216,7 +216,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **⭐ Ulasan Pengunjung**
 <div align="center">
-  <img src="screenshots/ulasan.png" alt="Ulasan Pengunjung" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/dda462b3-e544-4f7b-a03c-473ac935a457" alt="Ulasan Pengunjung" width="85%"/>
   <br/><sub><i>Rating keseluruhan dan daftar ulasan dari pengunjung</i></sub>
 </div>
 
@@ -224,7 +224,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **💰 Harga Tiket & Promo**
 <div align="center">
-  <img src="screenshots/harga-tiket.png" alt="Harga Tiket dan Promo" width="85%"/>
+  <img src= "https://github.com/user-attachments/assets/6e04c311-c1fd-4491-a174-13c7c77fb61c" alt="Harga Tiket dan Promo" width="85%"/>
   <br/><sub><i>Paket tiket masuk dan promo yang sedang berlaku</i></sub>
 </div>
 
@@ -232,7 +232,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **📍 Lokasi & Informasi**
 <div align="center">
-  <img src="screenshots/lokasi-info.png" alt="Lokasi dan Informasi" width="85%"/>
+  <img src= "https://github.com/user-attachments/assets/d4b11bbe-925a-44d7-8976-26eb716bd252" alt="Lokasi dan Informasi" width="85%"/>
   <br/><sub><i>Peta lokasi, jam operasional, fasilitas, dan kontak</i></sub>
 </div>
 
@@ -248,7 +248,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 | Login | Register |
 |:---:|:---:|
-| <img src="screenshots/login.png" alt="Login" width="100%"/> | <img src="screenshots/register.png" alt="Register" width="100%"/> |
+| <img src= "https://github.com/user-attachments/assets/85c25c6d-01e9-47aa-b1ca-5a1077cb1900" alt="Login" width="100%"/> | <img src= "https://github.com/user-attachments/assets/1575e605-4423-4dac-9997-972e88f1705a" alt="Register" width="100%"/> |
 | *Form masuk akun* | *Form daftar akun baru* |
 
 </div>
@@ -263,7 +263,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **📊 Dashboard Pengunjung**
 <div align="center">
-  <img src="screenshots/dashboard-user.png" alt="Dashboard User" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/698b0edb-8800-4b22-8d61-6a189e2bec86" alt="Dashboard User" width="85%"/>
   <br/><sub><i>Ringkasan aktivitas: ulasan, foto, dan reservasi milik user</i></sub>
 </div>
 
@@ -271,7 +271,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **⭐ Kirim Ulasan**
 <div align="center">
-  <img src="screenshots/kirim-ulasan.png" alt="Kirim Ulasan" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/bba4beab-5eb8-41ea-bbad-c2e2b2028b5a" alt="Kirim Ulasan" width="85%"/>
   <br/><sub><i>Form pengisian ulasan dan bintang rating</i></sub>
 </div>
 
@@ -279,7 +279,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **📷 Upload Foto Kunjungan**
 <div align="center">
-  <img src="screenshots/upload-foto.png" alt="Upload Foto" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/abc87741-3e37-4054-82ee-091494718c22" alt="Upload Foto" width="85%"/>
   <br/><sub><i>Unggah foto kenangan untuk ditampilkan di galeri</i></sub>
 </div>
 
@@ -287,7 +287,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🎟️ Reservasi Saya**
 <div align="center">
-  <img src="screenshots/reservasi-user.png" alt="Reservasi User" width="85%"/>
+  <img src= "https://github.com/user-attachments/assets/1ade2e14-03f5-479a-ab38-0d6ce9439698" alt="Reservasi User" width="85%"/>
   <br/><sub><i>Daftar dan status reservasi pengunjung</i></sub>
 </div>
 
@@ -301,7 +301,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **📈 Dashboard Admin**
 <div align="center">
-  <img src="screenshots/dashboard-admin.png" alt="Dashboard Admin" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/b8682d3e-8805-45d0-ba93-04c062e6452b" alt="Dashboard Admin" width="85%"/>
   <br/><sub><i>Statistik sistem, reservasi terbaru, dan wahana terpopuler</i></sub>
 </div>
 
@@ -309,7 +309,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🎠 Kelola Wahana**
 <div align="center">
-  <img src="screenshots/admin-wahana.png" alt="Kelola Wahana" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/1bee1b48-7690-47e4-ac3d-6d506d49471e" alt="Kelola Wahana" width="85%"/>
   <br/><sub><i>CRUD data wahana dengan foto dan informasi lengkap</i></sub>
 </div>
 
@@ -317,7 +317,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **📋 Kelola Reservasi**
 <div align="center">
-  <img src="screenshots/admin-reservasi.png" alt="Kelola Reservasi" width="85%"/>
+  <img src= "https://github.com/user-attachments/assets/72b66aec-320b-4a74-936b-6924b45e6442" alt="Kelola Reservasi" width="85%"/>
   <br/><sub><i>Input dan manajemen data reservasi pengunjung</i></sub>
 </div>
 
@@ -325,7 +325,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **💬 Moderasi Ulasan**
 <div align="center">
-  <img src="screenshots/admin-ulasan.png" alt="Kelola Ulasan" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/5f6dfab3-6502-4931-a185-28d27f83ca06" alt="Kelola Ulasan" width="85%"/>
   <br/><sub><i>Persetujuan dan penolakan ulasan sebelum tayang ke publik</i></sub>
 </div>
 
@@ -333,7 +333,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🖼️ Moderasi Foto User**
 <div align="center">
-  <img src="screenshots/admin-foto-user.png" alt="Kelola Foto User" width="85%"/>
+  <img src= "https://github.com/user-attachments/assets/93002d17-1293-41dc-9930-c1ec10dace3c" alt="Kelola Foto User" width="85%"/>
   <br/><sub><i>Kurasi foto unggahan pengunjung untuk galeri</i></sub>
 </div>
 
@@ -341,7 +341,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🏗️ Kelola Fasilitas**
 <div align="center">
-  <img src="screenshots/admin-fasilitas.png" alt="Kelola Fasilitas" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/03d49ef1-7e1a-4747-8f1d-0c1d9c15a433" alt="Kelola Fasilitas" width="85%"/>
   <br/><sub><i>Manajemen data fasilitas yang tersedia di area wisata</i></sub>
 </div>
 
@@ -349,7 +349,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 **🏷️ Kelola Harga & Promo**
 <div align="center">
-  <img src="screenshots/admin-harga-promo.png" alt="Kelola Harga dan Promo" width="85%"/>
+  <img src="https://github.com/user-attachments/assets/2811ed56-eb8f-4a2a-8387-9ff41c467971" alt="Kelola Harga dan Promo" width="85%"/>
   <br/><sub><i>Pengaturan paket tiket dan promo aktif</i></sub>
 </div>
 
