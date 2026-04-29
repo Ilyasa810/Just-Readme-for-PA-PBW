@@ -60,7 +60,7 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 │                    WONDERLAND SAMARINDA                         │
 │           Platform Wisata Digital Terpadu Samarinda             │
 ├─────────────────┬───────────────────┬───────────────────────────┤
-│  🌐 Publik      │   👤 User Login   │       🔐 Admin            │
+│    🌐 Publik    │   👤 User Login   │        🔐 Admin          │
 ├─────────────────┼───────────────────┼───────────────────────────┤
 │ Info taman &    │ Kirim ulasan &    │ Kelola seluruh data       │
 │ wahana          │ rating            │ website                   │
@@ -579,7 +579,7 @@ http://localhost/wonderland-samarinda/
 
 <div align="center">
 
-> 🎓 **Proyek Akhir PRAKTISI 2026 Genap** — Pemrograman Berbasis Web
+> 🎓 **Proyek Akhir Praktikum** — Mata Kuliah Pemrograman Berbasis Web
 >
 > Dosen Pengampu: **Ir. M. Ibadurrahman Arrasyid, S.Kom., M.Kom**
 >
