@@ -8,7 +8,7 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-%234479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.x-%2342B883?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-%237952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![MVC](https://img.shields.io/badge/Arsitektur-MVC-%23E34F26?style=for-the-badge&logo=htmx&logoColor=white)]()
+[![Laragon](https://img.shields.io/badge/Laragon-Compatible-%2345A3E5?style=for-the-badge&logo=laragon&logoColor=white)](https://laragon.org)
 
 <br/>
 
@@ -171,7 +171,7 @@ Database `wonderlands` terdiri dari **12 tabel**:
 
 ### Prasyarat
 
-- ✅ XAMPP (PHP 8.1+ & MySQL 8.0+)
+- ✅ [Laragon](https://laragon.org/) (PHP 8.1+ & MySQL 8.0+)
 - ✅ Browser modern (Chrome, Firefox, Edge)
 - ✅ Git (opsional, untuk clone)
 
@@ -184,9 +184,9 @@ Database `wonderlands` terdiri dari **12 tabel**:
 git clone https://github.com/username/wonderland-samarinda.git
 ```
 
-**② Pindahkan ke folder htdocs**
+**② Pindahkan ke folder www**
 ```
-C:/xampp/htdocs/wonderland-samarinda/
+C:/laragon/www/wonderland-samarinda/
 ```
 
 **③ Import Database**
@@ -202,7 +202,7 @@ Edit file `config/koneksi.php`:
 ```php
 $host = "localhost";
 $user = "root";
-$pass = "";           // sesuaikan dengan password MySQL kamu
+$pass = "";           // Laragon default: password kosong
 $db   = "wonderlands";
 ```
 
@@ -265,7 +265,7 @@ $db   = "wonderlands";
 | ![Vue.js](https://img.shields.io/badge/-Vue.js-42B883?logo=vuedotjs&logoColor=white) | 3.x | Reaktivitas UI frontend |
 | ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=white) | 5.x | Komponen UI & responsivitas |
 | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) | ES6+ | Interaktivitas halaman |
-| ![XAMPP](https://img.shields.io/badge/-XAMPP-FB7A24?logo=xampp&logoColor=white) | — | Local server development |
+| ![Laragon](https://img.shields.io/badge/-Laragon-777BB4?logo=laragon&logoColor=white) | — | Local server development |
 
 </div>
 
