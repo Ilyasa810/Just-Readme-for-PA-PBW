@@ -55,21 +55,13 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 
 <div align="center">
-  
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    WONDERLAND SAMARINDA                         │
-│           Platform Wisata Digital Terpadu Samarinda             │
-├─────────────────┬───────────────────┬───────────────────────────┤
-│    🌐 Publik    │   👤 User Login   │        🔐 Admin          │
-├─────────────────┼───────────────────┼───────────────────────────┤
-│ Info taman &    │ Kirim ulasan &    │ Kelola seluruh data       │
-│ wahana          │ rating            │ website                   │
-│ Harga & promo   │ Upload foto       │ Moderasi ulasan & foto    │
-│ Galeri & ulasan │ Lihat reservasi   │ Statistik real-time       │
-│ Kontak & lokasi │ Dashboard pribadi │ Manajemen reservasi       │
-└─────────────────┴───────────────────┴───────────────────────────┘
-```
+
+| 🌐 Publik | 👤 User Login | 🔐 Admin |
+|---|---|---|
+| Info taman & wahana | Kirim ulasan & rating | Kelola seluruh data website |
+| Harga & promo | Upload foto | Moderasi ulasan & foto |
+| Galeri & ulasan | Lihat reservasi | Statistik real-time |
+| Kontak & lokasi | Dashboard pribadi | Manajemen reservasi |
 
 </div>
 
