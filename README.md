@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=🎡%20Wonderland%20Samarinda&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Website%20Manajemen%20Taman%20Hiburan%20Berbasis%20PHP%20MVC&descAlignY=60&descSize=17" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&pause=300&speed=80&color=FF6B35&center=true&vCenter=true&width=800&lines=🎡+Wonderland+Samarinda" />
 
 </div>
 
