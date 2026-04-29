@@ -13,7 +13,7 @@
 <br/>
 
 > 🎓 **Proyek Akhir PRAKTISI 2026 Genap** — Pemrograman Web
-> Universitas Mulawarman · Fakultas Ilmu Komputer dan Teknologi Informasi
+> Universitas Mulawarman · Fakultas Teknik · Program Studi Sistem Informasi
 
 <br/>
 
@@ -28,6 +28,8 @@
 ## 📖 Deskripsi Aplikasi
 
 **Wonderland Samarinda** adalah aplikasi web manajemen taman hiburan yang dikembangkan sebagai solusi digitalisasi objek wisata nyata di Samarinda. Dibangun menggunakan **PHP Native** dengan pola arsitektur **MVC (Model-View-Controller)**, aplikasi ini menghadirkan pengalaman lengkap — mulai dari informasi publik taman, sistem reservasi online, hingga panel admin untuk pengelolaan konten secara menyeluruh.
+
+Website ini bertujuan untuk memudahkan masyarakat dalam memperoleh informasi terkait wahana, fasilitas, harga tiket, serta ulasan pengunjung secara cepat dan mudah diakses. Dari sisi admin, sistem ini mendukung pengelolaan data secara efisien melalui fitur CRUD yang terintegrasi dengan database MySQL.
 
 <br/>
 
@@ -48,12 +50,16 @@
 ## ✨ Fitur Website
 
 <details open>
-<summary><b>🌐 Halaman Publik</b></summary>
+<summary><b>🌐 Halaman Publik (Tanpa Login)</b></summary>
 <br/>
 
 - 🏠 **Beranda** — Landing page dengan info taman, statistik, galeri, dan ulasan terbaru
-- 🎢 **Detail Wahana** — Deskripsi lengkap, foto, dan informasi tiap wahana
-- 💰 **Pricelist** — Daftar harga tiket dan paket kunjungan
+- 🎢 **Aktivitas/Wahana** — Daftar wahana beserta deskripsi, harga, keterangan, rating, dan fasilitas
+- 💰 **Harga & Promo** — Informasi harga tiket serta promo yang sedang berlaku
+- 🏗️ **Fasilitas** — Daftar fasilitas yang tersedia di area wisata
+- 🖼️ **Galeri** — Foto-foto kunjungan yang telah disetujui oleh admin
+- ⭐ **Ulasan** — Ulasan dan rating dari pengunjung
+- 🔑 **Login & Register** — Masuk atau membuat akun user
 
 </details>
 
@@ -61,10 +67,10 @@
 <summary><b>👤 Fitur User (Setelah Login)</b></summary>
 <br/>
 
-- 📊 **Dashboard** — Ringkasan aktivitas dan riwayat kunjungan
-- 🎟️ **Reservasi** — Pemesanan tiket secara online
-- 📷 **Upload Foto** — Unggah foto kenangan kunjungan
-- ⭐ **Ulasan & Rating** — Tulis review untuk setiap wahana
+- 📊 **Dashboard** — Halaman utama user setelah login yang menampilkan ringkasan informasi akun
+- ⭐ **Kirim Ulasan** — Mengisi dan mengirim ulasan serta rating terhadap pengalaman kunjungan
+- 📷 **Upload Foto** — Mengunggah foto kunjungan ke dalam sistem
+- 🚪 **Logout** — Keluar dari sistem
 
 </details>
 
@@ -72,13 +78,15 @@
 <summary><b>🔐 Panel Admin</b></summary>
 <br/>
 
-- 📈 **Dashboard** — Statistik kunjungan dan ringkasan data real-time
-- 🎠 **Manajemen Wahana** — CRUD data wahana (nama, foto, deskripsi)
-- 📋 **Manajemen Reservasi** — Kelola dan konfirmasi pemesanan tiket
-- 💬 **Manajemen Ulasan** — Moderasi ulasan dari pengunjung
-- 🏷️ **Pricelist & Promo** — Kelola harga dan promo aktif
-- 🏗️ **Fasilitas** — Kelola informasi fasilitas taman
-- 🖼️ **Galeri & Foto User** — Kelola foto resmi dan kiriman pengunjung
+- 📈 **Dashboard** — Ringkasan data dan aktivitas dalam sistem secara real-time
+- 🎠 **Kelola Aktivitas/Wahana** — CRUD data wahana (nama, foto, keterangan, kapasitas, deskripsi, harga)
+- 🏗️ **Kelola Fasilitas** — CRUD data fasilitas (nama, ikon, deskripsi, keterangan tambahan, status)
+- 🏷️ **Kelola Harga Tiket** — Mengelola data harga tiket (nama paket, harga, deskripsi, ketentuan)
+- 🎁 **Kelola Promo** — Mengelola informasi promo aktif
+- 📋 **Kelola Reservasi** — Menginput dan mengelola data reservasi pengguna
+- 💬 **Kelola Ulasan** — Menyetujui atau menolak ulasan dari pengunjung sebelum ditampilkan ke publik
+- 🖼️ **Kelola Foto User** — Menyetujui atau menolak foto yang diunggah pengunjung
+- 🚪 **Logout** — Keluar dari halaman admin
 
 </details>
 
@@ -90,8 +98,157 @@
 - 🔒 **Session Auth** — Login & logout berbasis session PHP
 - 🚫 **Profanity Filter** — Filter otomatis kata tidak pantas pada ulasan
 - ✅ **Server-side Validation** — Validasi input di sisi server
+- 🛡️ **Prepared Statement** — Pencegahan SQL Injection menggunakan `$db->prepare()` dan `bind_param()`
 
 </details>
+
+<br/>
+
+---
+
+## 📸 Tampilan Website
+
+<details open>
+<summary><b>🌐 Halaman Publik</b></summary>
+<br/>
+
+**Landing Page**
+<div align="center">
+  <img src="screenshots/landing-page.png" alt="Landing Page" width="80%"/>
+</div>
+<br/>
+
+**Halaman Wahana / Atraksi**
+<div align="center">
+  <img src="screenshots/halaman-wahana.png" alt="Halaman Wahana" width="80%"/>
+</div>
+<br/>
+
+**Detail Wahana**
+<div align="center">
+  <img src="screenshots/detail-wahana.png" alt="Detail Wahana" width="80%"/>
+</div>
+<br/>
+
+**Galeri Foto**
+<div align="center">
+  <img src="screenshots/galeri.png" alt="Galeri Foto" width="80%"/>
+</div>
+<br/>
+
+**Ulasan Pengunjung**
+<div align="center">
+  <img src="screenshots/ulasan.png" alt="Ulasan Pengunjung" width="80%"/>
+</div>
+<br/>
+
+**Harga Tiket & Promo**
+<div align="center">
+  <img src="screenshots/harga-tiket.png" alt="Harga Tiket dan Promo" width="80%"/>
+</div>
+<br/>
+
+**Lokasi & Informasi**
+<div align="center">
+  <img src="screenshots/lokasi-info.png" alt="Lokasi dan Informasi" width="80%"/>
+</div>
+
+</details>
+
+<details open>
+<summary><b>🔑 Autentikasi</b></summary>
+<br/>
+
+**Halaman Login**
+<div align="center">
+  <img src="screenshots/login.png" alt="Halaman Login" width="80%"/>
+</div>
+<br/>
+
+**Halaman Register**
+<div align="center">
+  <img src="screenshots/register.png" alt="Halaman Register" width="80%"/>
+</div>
+
+</details>
+
+<details open>
+<summary><b>👤 Dashboard User</b></summary>
+<br/>
+
+**Dashboard Pengunjung**
+<div align="center">
+  <img src="screenshots/dashboard-user.png" alt="Dashboard User" width="80%"/>
+</div>
+<br/>
+
+**Kirim Ulasan**
+<div align="center">
+  <img src="screenshots/kirim-ulasan.png" alt="Kirim Ulasan" width="80%"/>
+</div>
+<br/>
+
+**Upload Foto Kunjungan**
+<div align="center">
+  <img src="screenshots/upload-foto.png" alt="Upload Foto" width="80%"/>
+</div>
+<br/>
+
+**Reservasi Saya**
+<div align="center">
+  <img src="screenshots/reservasi-user.png" alt="Reservasi User" width="80%"/>
+</div>
+
+</details>
+
+<details open>
+<summary><b>🔐 Panel Admin</b></summary>
+<br/>
+
+**Dashboard Admin**
+<div align="center">
+  <img src="screenshots/dashboard-admin.png" alt="Dashboard Admin" width="80%"/>
+</div>
+<br/>
+
+**Kelola Wahana**
+<div align="center">
+  <img src="screenshots/admin-wahana.png" alt="Kelola Wahana" width="80%"/>
+</div>
+<br/>
+
+**Kelola Reservasi**
+<div align="center">
+  <img src="screenshots/admin-reservasi.png" alt="Kelola Reservasi" width="80%"/>
+</div>
+<br/>
+
+**Kelola Ulasan**
+<div align="center">
+  <img src="screenshots/admin-ulasan.png" alt="Kelola Ulasan" width="80%"/>
+</div>
+<br/>
+
+**Kelola Foto User**
+<div align="center">
+  <img src="screenshots/admin-foto-user.png" alt="Kelola Foto User" width="80%"/>
+</div>
+<br/>
+
+**Kelola Fasilitas**
+<div align="center">
+  <img src="screenshots/admin-fasilitas.png" alt="Kelola Fasilitas" width="80%"/>
+</div>
+<br/>
+
+**Kelola Harga & Promo**
+<div align="center">
+  <img src="screenshots/admin-harga-promo.png" alt="Kelola Harga dan Promo" width="80%"/>
+</div>
+
+</details>
+
+> 💡 **Cara menambahkan screenshot:** Buat folder `screenshots/` di root project, lalu simpan gambar sesuai nama file di atas. Atau ganti path `screenshots/nama-file.png` dengan URL gambar langsung jika di-host online.
 
 <br/>
 
@@ -120,6 +277,7 @@ wonderland-samarinda/
 │   │
 │   ├── 📁 views/               # Tampilan halaman
 │   │   ├── admin/              # View panel admin
+│   │   │   └── partials/       # Komponen sidebar.php & topbar.php
 │   │   ├── auth/               # Login & Register
 │   │   ├── public/             # Halaman publik
 │   │   └── user/               # Dashboard user
@@ -129,6 +287,9 @@ wonderland-samarinda/
 │       └── profanity_filter.php
 │
 ├── 📁 assets/                  # CSS, JS, gambar statis
+│   ├── css/                    # File stylesheet tampilan
+│   ├── gallery/                # Foto galeri
+│   └── wahana/                 # Foto masing-masing wahana
 ├── 📁 config/
 │   └── koneksi.php             # Konfigurasi database
 ├── 📁 uploads/                 # Foto yang diupload user
@@ -250,6 +411,8 @@ $db   = "wonderlands";
                └─────────────┘
 ```
 
+Semua request diarahkan melalui `index.php` menggunakan parameter `?page=` di URL (Front Controller Pattern). Contoh: `?page=admin_reservasi` akan memanggil `AdminController->reservasi()`.
+
 <br/>
 
 ---
@@ -275,16 +438,18 @@ $db   = "wonderlands";
 
 ## 👥 Tim Pengembang
 
-> 🎓 Dikerjakan sebagai **Proyek Akhir PRAKTISI 2026 Genap** — Mata Kuliah Pemrograman Web, bermitra dengan objek wisata **Wonderland Samarinda**.
+> 🎓 Dikerjakan sebagai **Proyek Akhir PRAKTISI 2026 Genap** — Mata Kuliah Pemrograman Berbasis Web, bermitra dengan objek wisata **Wonderland Samarinda**.
+> 
+> Dosen Pengampu: **Ir. M. Ibadurrahman Arrasyid, S.Kom., M.Kom**
 
 <div align="center">
 
 | Nama | NIM | Peran |
-|:---|:---:|:---:|
-| *(nama anggota 1)* | *(NIM)* | Backend & Database |
-| *(nama anggota 2)* | *(NIM)* | Frontend & UI |
-| *(nama anggota 3)* | *(NIM)* | Admin Panel |
-| *(nama anggota 4)* | *(NIM)* | Dokumentasi & Testing |
+|:---|:---:|:---|
+| Nayla Camelia Indraswari | 2409116009 | Koordinasi Tim, Flowchart & Laporan |
+| Nabila Imtiyaz Agustin | 2409116011 | Database Design & Laporan |
+| Muhammad Ilyasa' 'Izzuddin | 2409116033 | Backend & Integrasi Database |
+| Muhammad Reffi Fadillah | 2409116034 | UI/UX Design (Figma), Frontend (HTML/CSS/Vue.js) & Backend (PHP) |
 
 </div>
 
@@ -300,6 +465,6 @@ $db   = "wonderlands";
 
 *Dibuat dengan ❤️ oleh Tim Proyek Akhir PRAKTISI 2026 Genap*
 
-*Universitas Mulawarman — Samarinda, Kalimantan Timur*
+*Program Studi Sistem Informasi — Fakultas Teknik — Universitas Mulawarman, Samarinda, Kalimantan Timur*
 
 </div>
