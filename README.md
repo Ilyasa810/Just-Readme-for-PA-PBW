@@ -37,7 +37,7 @@
 
 <div align="center">
 
-[📖 Deskripsi](#-deskripsi-aplikasi) &nbsp;·&nbsp; [✨ Fitur](#-fitur-website) &nbsp;·&nbsp; [📸 Screenshots](#-tampilan-website) &nbsp;·&nbsp; [🗂️ Struktur](#️-struktur-direktori) &nbsp;·&nbsp; [⚙️ Instalasi](#️-instalasi) &nbsp;·&nbsp; [👥 Tim](#-tim-pengembang)
+[📖 Deskripsi](#-deskripsi-aplikasi) &nbsp;·&nbsp; [🎯 Tujuan & Manfaat](#-tujuan--manfaat) &nbsp;·&nbsp; [✨ Fitur](#-fitur-website) &nbsp;·&nbsp; [📸 Screenshots](#-tampilan-website) &nbsp;·&nbsp; [🗂️ Struktur](#️-struktur-direktori) &nbsp;·&nbsp; [⚙️ Instalasi](#️-instalasi) &nbsp;·&nbsp; [👥 Tim](#-tim-pengembang)
 
 </div>
 
@@ -48,6 +48,8 @@
 ## 📖 Deskripsi Aplikasi
 
 **Wonderland Samarinda** adalah sistem informasi wisata berbasis web yang dikembangkan sebagai solusi digitalisasi destinasi wisata nyata di Kota Samarinda. Dibangun menggunakan **PHP Native** dengan arsitektur **MVC (Model-View-Controller)**, aplikasi ini hadir sebagai platform terpadu untuk pengunjung dan pengelola taman hiburan.
+
+Perkembangan teknologi informasi di era digital telah memberikan dampak signifikan dalam penyebaran informasi dan promosi sektor pariwisata. Website ini hadir untuk menjawab kebutuhan Wonderland Samarinda yang sebelumnya belum memiliki platform digital resmi — informasi mengenai wahana, fasilitas, harga tiket, dan ulasan pengunjung masih terbatas dan tidak terpusat.
 
 <br/>
 
@@ -74,6 +76,31 @@
 
 ---
 
+## 🎯 Tujuan & Manfaat
+
+### Tujuan Proyek
+
+1. Membangun website yang mampu menyajikan informasi mengenai Wonderland Samarinda secara terpusat dan mudah diakses oleh masyarakat.
+2. Menyediakan media digital yang informatif untuk menampilkan data wahana, fasilitas, tiket, dan ulasan pengunjung secara terstruktur.
+3. Mempermudah admin dalam mengelola informasi wisata melalui fitur pengelolaan data berbasis website yang efisien dan terorganisir.
+
+### Manfaat Proyek
+
+1. **Meningkatkan efektivitas pengelolaan informasi** — Website membantu mitra dalam mengelola dan memperbarui informasi terkait Wonderland Samarinda.
+2. **Mendukung media promosi digital** — Website dapat digunakan sebagai sarana promosi resmi yang mampu menjangkau lebih banyak calon pengunjung.
+3. **Mempermudah penyampaian informasi** — Mitra dapat menyampaikan informasi secara cepat, akurat, dan terpusat tanpa bergantung pada media lain yang terbatas.
+4. **Meningkatkan profesionalitas pengelolaan wisata** — Keberadaan website resmi memberikan kesan lebih profesional dan terpercaya.
+
+### ⚠️ Keterbatasan Proyek
+
+- Website berfungsi sebagai **media informasi dan pengelolaan data**, belum mendukung fitur transaksi secara penuh.
+- Sistem belum menyediakan fitur **pembelian tiket secara online**; pembelian tiket masih dilakukan secara langsung di lokasi wisata.
+- Website belum mendukung **sistem pembayaran digital**.
+
+<br/>
+
+---
+
 ## ✨ Fitur Website
 
 <details open>
@@ -82,7 +109,7 @@
 
 | Menu | Fungsi |
 |:---|:---|
-| 🏠 **Beranda** | Landing page dengan highlight wahana, statistik, galeri, dan promo terkini |
+| 🏠 **Beranda** | Landing page dengan gambaran umum wisata, highlight aktivitas, dan promo terbaru |
 | 🎢 **Aktivitas / Wahana** | Daftar wahana lengkap: deskripsi, harga, rating, kapasitas, dan fasilitas |
 | 💰 **Harga & Promo** | Informasi paket tiket dan promo yang sedang aktif |
 | 🏗️ **Fasilitas** | Daftar fasilitas tersedia di area wisata |
@@ -102,9 +129,9 @@
 | Menu | Fungsi |
 |:---|:---|
 | 📊 **Dashboard** | Ringkasan aktivitas dan informasi akun pribadi |
+| 🎟️ **Reservasi** | Pemesanan kunjungan; memilih tanggal dan mengisi data, disimpan dengan status menunggu konfirmasi admin |
 | ⭐ **Kirim Ulasan** | Tulis ulasan dan beri rating berdasarkan pengalaman kunjungan |
 | 📷 **Upload Foto** | Unggah foto kunjungan untuk ditampilkan di galeri (perlu persetujuan admin) |
-| 🎟️ **Reservasi Saya** | Lihat riwayat dan status reservasi |
 | 🚪 **Logout** | Keluar dari sistem |
 
 </details>
@@ -326,6 +353,9 @@
   <br/><sub><i>Pengaturan paket tiket dan promo aktif</i></sub>
 </div>
 
+</details>
+
+<br/>
 
 ---
 
@@ -438,9 +468,17 @@ Database **`wonderlands`** terdiri dari **12 tabel** yang saling terintegrasi:
         +---------------------+   +-----------------------+
 </pre>
 
-
 > **Cara kerja routing:** Semua request masuk ke `index.php` via parameter `?page=` (Front Controller Pattern).
 > Contoh: URL `?page=admin_reservasi` → memanggil `AdminController->reservasi()`
+
+**Penjelasan tiap layer:**
+
+- **`UserModel.php`** — Menangani data pengguna: pencarian user by email saat login, pembuatan akun baru, pengelolaan foto unggahan pengunjung.
+- **`WahanaModel.php`** — Mengambil data wahana untuk halaman daftar maupun detail berdasarkan ID.
+- **`GaleriModel.php`** — Mengambil data foto galeri yang ditampilkan di halaman publik.
+- **`ReservasiModel.php`** — Menangani data reservasi: ambil semua data, ubah status (terjadwal/selesai/dibatalkan), hapus data.
+- **`UlasanModel.php`** — Mengelola ulasan: simpan ulasan baru, ubah status (pending/approved), hapus ulasan.
+- Semua Model menggunakan **Prepared Statement** (`$db->prepare()` & `bind_param()`) untuk mencegah SQL Injection.
 
 <br/>
 
@@ -555,12 +593,24 @@ http://localhost/wonderland-samarinda/
 
 | Avatar | Nama | NIM | Kontribusi |
 |:---:|:---|:---:|:---|
-| 👩‍💼 | **Nayla Camelia Indraswari** | 2409116009 | Koordinasi Tim · Flowchart Sistem · Penyusunan Laporan |
+| 👩‍💼 | **Nayla Camelia Indraswari** | 2409116009 | Koordinasi Tim · Pembuatan Flowchart Sistem · Penyusunan Laporan |
 | 👩‍💻 | **Nabila Imtiyaz Agustin** | 2409116011 | Perancangan & Pengelolaan Database · Penyusunan Laporan |
-| 👨‍💻 | **Muhammad Ilyasa' 'Izzuddin** | 2409116033 | Backend Development · Integrasi Website & Database |
-| 👨‍🎨 | **Muhammad Reffi Fadillah** | 2409116034 | UI/UX Design (Figma) · Frontend (HTML/CSS/Vue.js) · Backend (PHP) |
+| 👨‍💻 | **Muhammad Ilyasa' 'Izzuddin** | 2409116033 | Backend Development · Integrasi Website & Database · Penyusunan Laporan |
+| 👨‍🎨 | **Muhammad Reffi Fadillah** | 2409116034 | UI/UX Design (Figma) · Frontend (HTML/CSS/Vue.js) · Backend (PHP) · Penyusunan Laporan |
 
 </div>
+
+<br/>
+
+---
+
+## 📝 Kesimpulan
+
+Pembangunan website Wonderland Samarinda dirancang sebagai solusi untuk menyediakan media informasi wisata yang terpusat, terstruktur, dan mudah diakses oleh masyarakat. Website ini menampilkan berbagai informasi penting seperti wahana, fasilitas, harga tiket, serta ulasan pengunjung secara sistematis.
+
+Penerapan arsitektur MVC membantu pengelolaan sistem yang lebih terorganisir, memudahkan proses pengembangan dan pemeliharaan secara tim. Dari sisi pengguna, website memberikan kemudahan dalam memperoleh informasi; dari sisi admin, sistem ini mendukung pengelolaan data secara efisien melalui fitur CRUD.
+
+Website ini memiliki potensi untuk dikembangkan lebih lanjut, terutama dalam penambahan fitur transaksi online dan sistem pembayaran digital di masa mendatang.
 
 <br/>
 
