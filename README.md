@@ -53,8 +53,9 @@ Perkembangan teknologi informasi di era digital telah memberikan dampak signifik
 
 <br/>
 
-<div align="center">
 
+<div align="center">
+  
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                    WONDERLAND SAMARINDA                         │
