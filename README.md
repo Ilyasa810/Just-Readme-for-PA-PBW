@@ -1,91 +1,142 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/PHP-8.1-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-<img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/MVC-Architecture-E34F26?style=for-the-badge" />
-<img src="https://img.shields.io/badge/XAMPP-Compatible-FB7A24?style=for-the-badge&logo=apache&logoColor=white" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=🎡%20Wonderland%20Samarinda&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Website%20Manajemen%20Taman%20Hiburan%20Berbasis%20PHP%20MVC&descAlignY=58&descSize=16" />
 
-# 🎡 Wonderland Samarinda
+<br/>
 
-**Website manajemen taman hiburan berbasis PHP Native dengan arsitektur MVC**
+[![PHP](https://img.shields.io/badge/PHP-8.1-%23777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-%234479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.x-%2342B883?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-%237952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![MVC](https://img.shields.io/badge/Arsitektur-MVC-%23E34F26?style=for-the-badge&logo=htmx&logoColor=white)]()
 
-*Tugas UTS — Mata Kuliah Pemrograman Web | Universitas Mulawarman*
+<br/>
+
+> 🎓 **Proyek Akhir PRAKTISI 2026 Genap** — Pemrograman Web
+> Universitas Mulawarman · Fakultas Ilmu Komputer dan Teknologi Informasi
+
+<br/>
+
+[📖 Deskripsi](#-deskripsi-aplikasi) · [✨ Fitur](#-fitur-website) · [⚙️ Instalasi](#%EF%B8%8F-instalasi) · [👥 Tim](#-tim-pengembang)
 
 </div>
 
----
-
-## 📋 Deskripsi
-
-Wonderland Samarinda adalah aplikasi web manajemen taman hiburan yang dibangun menggunakan PHP Native dengan pola arsitektur **MVC (Model-View-Controller)**. Website ini menyediakan antarmuka untuk pengunjung dan panel administrasi untuk pengelola taman.
+<br/>
 
 ---
 
-## ✨ Fitur Utama
+## 📖 Deskripsi Aplikasi
 
-### 🌐 Halaman Publik
-- **Home** — Landing page dengan informasi taman, galeri, dan ulasan pengunjung
-- **Detail Wahana** — Halaman detail tiap wahana beserta foto dan deskripsi
-- **Pricelist** — Daftar harga tiket dan paket kunjungan
+**Wonderland Samarinda** adalah aplikasi web manajemen taman hiburan yang dikembangkan sebagai solusi digitalisasi objek wisata nyata di Samarinda. Dibangun menggunakan **PHP Native** dengan pola arsitektur **MVC (Model-View-Controller)**, aplikasi ini menghadirkan pengalaman lengkap — mulai dari informasi publik taman, sistem reservasi online, hingga panel admin untuk pengelolaan konten secara menyeluruh.
 
-### 👤 Fitur User (Setelah Login)
-- **Dashboard User** — Ringkasan aktivitas dan data pribadi
-- **Reservasi** — Pemesanan tiket secara online
-- **Upload Foto** — Pengunjung dapat mengunggah foto kunjungan mereka
-- **Ulasan** — Sistem review dan rating wahana
+<br/>
 
-### 🔐 Panel Admin
-- **Dashboard Admin** — Statistik kunjungan dan ringkasan data
-- **Manajemen Wahana** — CRUD data wahana (nama, foto, deskripsi)
-- **Manajemen Reservasi** — Kelola pemesanan tiket masuk
-- **Manajemen Ulasan** — Moderasi ulasan pengunjung
-- **Pricelist** — Kelola daftar harga
-- **Fasilitas** — Kelola informasi fasilitas taman
-- **Foto Pengunjung** — Kelola galeri foto dari pengunjung
+<div align="center">
 
-### 🛡️ Keamanan
-- CSRF Token pada setiap form autentikasi
-- Session-based login & logout
-- Filter kata tidak pantas pada ulasan (Profanity Filter)
-- Validasi input sisi server
+| 🌐 Pengunjung Umum | 👤 User Login | 🔐 Admin |
+|:---:|:---:|:---:|
+| Lihat info taman & wahana | Reservasi tiket online | Kelola semua data |
+| Cek pricelist & galeri | Upload foto kunjungan | Moderasi ulasan |
+| Baca ulasan pengunjung | Tulis ulasan & rating | Statistik dashboard |
+
+</div>
+
+<br/>
+
+---
+
+## ✨ Fitur Website
+
+<details open>
+<summary><b>🌐 Halaman Publik</b></summary>
+<br/>
+
+- 🏠 **Beranda** — Landing page dengan info taman, statistik, galeri, dan ulasan terbaru
+- 🎢 **Detail Wahana** — Deskripsi lengkap, foto, dan informasi tiap wahana
+- 💰 **Pricelist** — Daftar harga tiket dan paket kunjungan
+
+</details>
+
+<details open>
+<summary><b>👤 Fitur User (Setelah Login)</b></summary>
+<br/>
+
+- 📊 **Dashboard** — Ringkasan aktivitas dan riwayat kunjungan
+- 🎟️ **Reservasi** — Pemesanan tiket secara online
+- 📷 **Upload Foto** — Unggah foto kenangan kunjungan
+- ⭐ **Ulasan & Rating** — Tulis review untuk setiap wahana
+
+</details>
+
+<details open>
+<summary><b>🔐 Panel Admin</b></summary>
+<br/>
+
+- 📈 **Dashboard** — Statistik kunjungan dan ringkasan data real-time
+- 🎠 **Manajemen Wahana** — CRUD data wahana (nama, foto, deskripsi)
+- 📋 **Manajemen Reservasi** — Kelola dan konfirmasi pemesanan tiket
+- 💬 **Manajemen Ulasan** — Moderasi ulasan dari pengunjung
+- 🏷️ **Pricelist & Promo** — Kelola harga dan promo aktif
+- 🏗️ **Fasilitas** — Kelola informasi fasilitas taman
+- 🖼️ **Galeri & Foto User** — Kelola foto resmi dan kiriman pengunjung
+
+</details>
+
+<details open>
+<summary><b>🛡️ Keamanan</b></summary>
+<br/>
+
+- 🔑 **CSRF Token** — Perlindungan pada setiap form autentikasi
+- 🔒 **Session Auth** — Login & logout berbasis session PHP
+- 🚫 **Profanity Filter** — Filter otomatis kata tidak pantas pada ulasan
+- ✅ **Server-side Validation** — Validasi input di sisi server
+
+</details>
+
+<br/>
 
 ---
 
 ## 🗂️ Struktur Direktori
 
 ```
-wonderland_fixed/
-├── app/
-│   ├── controllers/
+wonderland-samarinda/
+│
+├── 📁 app/
+│   ├── 📁 controllers/         # Logika bisnis aplikasi
 │   │   ├── AdminController.php
 │   │   ├── AuthController.php
 │   │   ├── GaleriController.php
 │   │   ├── UlasanController.php
 │   │   ├── UserController.php
 │   │   └── WahanaController.php
-│   ├── models/
+│   │
+│   ├── 📁 models/              # Interaksi dengan database
 │   │   ├── GaleriModel.php
 │   │   ├── ReservasiModel.php
 │   │   ├── UlasanModel.php
 │   │   ├── UserModel.php
 │   │   └── WahanaModel.php
-│   ├── views/
-│   │   ├── admin/          # View panel admin
-│   │   ├── auth/           # Login & Register
-│   │   ├── public/         # Halaman publik
-│   │   └── user/           # Dashboard user
-│   └── helpers/
+│   │
+│   ├── 📁 views/               # Tampilan halaman
+│   │   ├── admin/              # View panel admin
+│   │   ├── auth/               # Login & Register
+│   │   ├── public/             # Halaman publik
+│   │   └── user/               # Dashboard user
+│   │
+│   └── 📁 helpers/             # Fungsi pembantu
 │       ├── image_helper.php
 │       └── profanity_filter.php
-├── assets/
-│   ├── css/
-│   └── wahana/
-├── config/
-│   └── koneksi.php
-├── uploads/                # Foto yang diupload user
-├── index.php               # Entry point (Front Controller)
-└── wonderlands.sql         # File database
+│
+├── 📁 assets/                  # CSS, JS, gambar statis
+├── 📁 config/
+│   └── koneksi.php             # Konfigurasi database
+├── 📁 uploads/                 # Foto yang diupload user
+├── 📄 index.php                # Entry point (Front Controller)
+└── 🗄️ wonderlands.sql          # Dump database lengkap
 ```
+
+<br/>
 
 ---
 
@@ -93,140 +144,162 @@ wonderland_fixed/
 
 Database `wonderlands` terdiri dari **12 tabel**:
 
-| Tabel | Keterangan |
-|---|---|
-| `users` | Data akun pengunjung |
-| `admin` | Data akun admin |
-| `wahana` | Data wahana / atraksi |
-| `reservasi` | Data pemesanan tiket |
-| `tiket` | Detail tiket reservasi |
-| `ulasan` | Review dan rating dari pengunjung |
-| `galeri` | Galeri foto resmi taman |
-| `foto_pengunjung` | Foto yang diunggah pengunjung |
-| `pricelist` | Daftar harga tiket |
-| `promo` | Data promo aktif |
-| `fasilitas` | Informasi fasilitas taman |
-| `kontak_pesan` | Pesan dari form kontak |
+<div align="center">
+
+| # | Tabel | Keterangan |
+|:---:|:---|:---|
+| 1 | `users` | Data akun pengunjung terdaftar |
+| 2 | `admin` | Data akun pengelola / admin |
+| 3 | `wahana` | Data wahana & atraksi taman |
+| 4 | `reservasi` | Data pemesanan tiket masuk |
+| 5 | `tiket` | Detail tiket per reservasi |
+| 6 | `ulasan` | Review & rating dari pengunjung |
+| 7 | `galeri` | Galeri foto resmi taman |
+| 8 | `foto_pengunjung` | Foto kiriman pengunjung |
+| 9 | `pricelist` | Daftar harga tiket |
+| 10 | `promo` | Data promo & diskon aktif |
+| 11 | `fasilitas` | Informasi fasilitas taman |
+| 12 | `kontak_pesan` | Pesan dari form kontak |
+
+</div>
+
+<br/>
 
 ---
 
-## ⚙️ Instalasi & Konfigurasi
+## ⚙️ Instalasi
 
 ### Prasyarat
-- XAMPP (PHP 8.1+, MySQL 8.0+)
-- Browser modern
 
-### Langkah Instalasi
+- ✅ XAMPP (PHP 8.1+ & MySQL 8.0+)
+- ✅ Browser modern (Chrome, Firefox, Edge)
+- ✅ Git (opsional, untuk clone)
 
-**1. Clone / Ekstrak Project**
+<br/>
+
+### Langkah-langkah
+
+**① Clone Repository**
 ```bash
-# Clone repo
 git clone https://github.com/username/wonderland-samarinda.git
-
-# Atau ekstrak zip langsung ke folder htdocs XAMPP
 ```
 
-**2. Pindahkan ke htdocs**
+**② Pindahkan ke folder htdocs**
 ```
-C:/xampp/htdocs/wonderland_fixed/
+C:/xampp/htdocs/wonderland-samarinda/
 ```
 
-**3. Import Database**
-- Buka `http://localhost/phpmyadmin`
-- Buat database baru bernama `wonderlands`
-- Klik **Import** → pilih file `wonderlands.sql` → klik **Go**
+**③ Import Database**
+```
+1. Buka http://localhost/phpmyadmin
+2. Buat database baru → nama: wonderlands
+3. Pilih tab Import → upload file wonderlands.sql → klik Go
+```
 
-**4. Konfigurasi Koneksi Database**
+**④ Konfigurasi Koneksi**
 
 Edit file `config/koneksi.php`:
 ```php
 $host = "localhost";
 $user = "root";
-$pass = "";          // Sesuaikan password MySQL kamu
+$pass = "";           // sesuaikan dengan password MySQL kamu
 $db   = "wonderlands";
 ```
 
-**5. Jalankan Website**
+**⑤ Jalankan Aplikasi**
 ```
-http://localhost/wonderland_fixed/
+🌐 http://localhost/wonderland-samarinda/
 ```
 
----
+<br/>
 
-## 🚀 Cara Akses
+### 🚪 Akses Login
 
-| Role | URL | Akses |
-|---|---|---|
-| Publik | `http://localhost/wonderland_fixed/` | Tanpa login |
-| User | `?page=login` | Daftar akun baru |
-| Admin | `?page=login` | Gunakan akun admin dari database |
+| Role | URL | Keterangan |
+|:---:|:---|:---|
+| 👥 Publik | `/` | Tanpa login |
+| 👤 User | `/?page=login` | Daftar akun baru via Register |
+| 🔐 Admin | `/?page=login` | Cek kredensial di tabel `admin` (phpMyAdmin) |
 
-> **Catatan:** Akun admin sudah tersedia di file SQL. Cek tabel `admin` di phpMyAdmin setelah import.
+<br/>
 
 ---
 
 ## 🧱 Arsitektur MVC
 
 ```
-Request (URL ?page=xxx)
-        │
-        ▼
-   index.php (Front Controller)
-        │
-        ├── Routing via switch($page)
-        │
-        ▼
-   Controller (misal: WahanaController)
-        │
-        ├── Memanggil Model untuk data
-        │         │
-        │         ▼
-        │      Model ←→ Database (MySQLi)
-        │
-        └── Memanggil View untuk tampilan
-                  │
-                  ▼
-              Response HTML
+                    ┌─────────────────────┐
+    HTTP Request ──▶│     index.php        │
+                    │  (Front Controller)  │
+                    └────────┬────────────┘
+                             │ routing via ?page=
+                             ▼
+                    ┌─────────────────────┐
+                    │     Controller       │
+                    │  (Wahana/User/Admin) │
+                    └──────┬──────┬───────┘
+                           │      │
+               ┌───────────▼──┐  ┌▼───────────────┐
+               │    Model     │  │      View        │
+               │  (query DB)  │  │ (render HTML/PHP)│
+               └──────┬───────┘  └────────┬─────────┘
+                      │                   │
+               ┌──────▼──────┐            ▼
+               │   Database   │     Response ke Browser
+               │   (MySQL)    │
+               └─────────────┘
 ```
+
+<br/>
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi
 
-| Teknologi | Versi | Kegunaan |
-|---|---|---|
-| PHP | 8.1 | Backend & logika bisnis |
-| MySQL | 8.0 | Database utama |
-| MySQLi | — | Koneksi database |
-| HTML/CSS | 5/3 | Struktur & tampilan |
-| JavaScript | ES6 | Interaktivitas frontend |
-| Bootstrap | 5.x | Komponen UI |
-| XAMPP | — | Local development server |
+<div align="center">
+
+| Teknologi | Versi | Fungsi |
+|:---:|:---:|:---|
+| ![PHP](https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white) | 8.1 | Backend & routing |
+| ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white) | 8.0 | Database utama |
+| ![Vue.js](https://img.shields.io/badge/-Vue.js-42B883?logo=vuedotjs&logoColor=white) | 3.x | Reaktivitas UI frontend |
+| ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=white) | 5.x | Komponen UI & responsivitas |
+| ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) | ES6+ | Interaktivitas halaman |
+| ![XAMPP](https://img.shields.io/badge/-XAMPP-FB7A24?logo=xampp&logoColor=white) | — | Local server development |
+
+</div>
+
+<br/>
 
 ---
 
 ## 👥 Tim Pengembang
 
-> Proyek ini dikerjakan sebagai tugas kelompok Ujian Tengah Semester (UTS) mata kuliah Pemrograman Web.
+> 🎓 Dikerjakan sebagai **Proyek Akhir PRAKTISI 2026 Genap** — Mata Kuliah Pemrograman Web, bermitra dengan objek wisata **Wonderland Samarinda**.
+
+<div align="center">
 
 | Nama | NIM | Peran |
-|---|---|---|
-| *(nama anggota)* | *(NIM)* | *(peran, misal: Backend/DB)* |
-| *(nama anggota)* | *(NIM)* | *(peran, misal: Frontend)* |
-| *(nama anggota)* | *(NIM)* | *(peran, misal: Admin Panel)* |
+|:---|:---:|:---:|
+| *(nama anggota 1)* | *(NIM)* | Backend & Database |
+| *(nama anggota 2)* | *(NIM)* | Frontend & UI |
+| *(nama anggota 3)* | *(NIM)* | Admin Panel |
+| *(nama anggota 4)* | *(NIM)* | Dokumentasi & Testing |
 
----
+</div>
 
-## 📝 Lisensi
-
-Proyek ini dibuat untuk keperluan akademik. Tidak untuk digunakan secara komersial.
+<br/>
 
 ---
 
 <div align="center">
 
-Made with ❤️ for **Wonderland Samarinda**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
 
-*Universitas Mulawarman — Pemrograman Web*
+**🎡 Wonderland Samarinda**
+
+*Dibuat dengan ❤️ oleh Tim Proyek Akhir PRAKTISI 2026 Genap*
+
+*Universitas Mulawarman — Samarinda, Kalimantan Timur*
 
 </div>
